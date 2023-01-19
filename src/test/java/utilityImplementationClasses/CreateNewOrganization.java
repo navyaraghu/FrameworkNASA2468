@@ -50,7 +50,8 @@ public class CreateNewOrganization {
 		driver.findElement(By.xpath("//input[@name='accountname']")).sendKeys(orgName);
 		driver.findElement(By.xpath("//div[@align='center']//input[@title='Save [Alt+S]'][1]")).click();
 		//driver.findElement(By.xpath("//td[@class='small' and contains(@onmouseover,'fnDropDownUser')]//following::a[contains(text(),'Sign Out')]")).click();
-		Thread.sleep(3000);
+		//Thread.sleep(3000);
+		
 		driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']")).click();
 		driver.findElement(By.xpath("//a[text()='Sign Out']")).click();
 		//driver.findElement(By.xpath("//td[@class='small' and contains(@onmouseover,'fnDropDownUser')]//following::a[contains(text(),'Sign Out')]")).click();
