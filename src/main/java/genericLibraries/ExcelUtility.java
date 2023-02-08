@@ -54,6 +54,12 @@ public class ExcelUtility {
 		Sheet sheet=workbook.getSheet(sheetName);
 		return df.formatCellValue(sheet.getRow(rowNum).getCell(cellNum));
 	}
+	/**
+	 * This method is used to read the mulptiple data from excel
+	 * @param expectedTestName
+	 * @param sheetName
+	 * @return
+	 */
 	public Map<String,String> readDataFromExcel(String expectedTestName, String sheetName){
 		df=new DataFormatter();
 		Sheet sheet=workbook.getSheet(sheetName);
@@ -89,7 +95,7 @@ public class ExcelUtility {
 	 * @param path
 	 * @param sheetName 
 	 */
-	public void setDataToExcel(int rowNum, int cellNum, Date data, String path, String sheetName) {
+	public void setDataToExcel(int rowNum, int cellNum, String data, String path, String sheetName) {
 		Sheet sheet=workbook.getSheet(sheetName);
 		Cell cell=sheet.getRow(rowNum).createCell(cellNum);
 		cell.setCellValue(data);

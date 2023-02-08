@@ -2,6 +2,7 @@ package propertiesFile;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -15,6 +16,9 @@ public class ReadDataFromPropertiesFile {
 		String url=p.getProperty("url");
 		long time=Long.parseLong(p.getProperty("timeouts"));
 		System.out.println(url+"\t"+time);
+		p.setProperty("user", "raghu");
+		//p.put("user", "raghu");
+	
 
 	}
 

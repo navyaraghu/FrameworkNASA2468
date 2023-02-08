@@ -1,4 +1,4 @@
-package ChromeOptions;
+package chromeOptions;
 
 import java.time.Duration;
 
